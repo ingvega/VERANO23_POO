@@ -5,3 +5,8 @@
 Repositorio para  compartir los ejercicios de clase
 
 <img height="35" src="https://static.javatpoint.com/tutorial/uml/images/uml-tutorial.png"> <img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png">
+
+
+<!-- TechX | Ulises L Camacho, estuvo aquí -->
+<!--   https://web.ulisescamacho.repl.co   -->
+<!--     https://twitter.com/Mr__TechX     -->
