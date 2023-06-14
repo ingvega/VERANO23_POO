@@ -19,7 +19,7 @@ public class Clase {
         Alumno pedro=new Alumno();
         //Inaccesible desde otro paquete
         //pedro.nombre="Pedro Perez";
-        pedro.noControl="S23120001";
+        pedro.setNoControl("S23120001");
         //Inaccesible desde otro paquete
 //        pedro.semestre=1;
 //        pedro.promedio=0;
