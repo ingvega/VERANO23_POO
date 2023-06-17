@@ -18,8 +18,8 @@ public class Ubicacion {
     }
     
     public Ubicacion(int x, int y){
-        this.x=x;
-        this.y=y;
+        setX(x);
+        setY(y);
     }
     
     public int getX(){
