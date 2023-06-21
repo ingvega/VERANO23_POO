@@ -21,7 +21,8 @@ public class Prueba {
                 p.getPrecio() +"\n Costo: "+
                 p.getCosto() +"\n Existencia: "+
                 p.getExistencia()+"\n MargenGanancia: "+
-                p.margenGanancia);
+                Producto.margenGanancia);
+        Producto.margenGanancia=20;
         
         System.out.println(p2.getNombre() + "\n Precio: " +
                 p2.getPrecio() +"\n Costo: "+

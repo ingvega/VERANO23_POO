@@ -10,6 +10,9 @@ package unidad2.karel;
  */
 public class Prueba {
     public static void main(String[] args) {
-        //Mundo m=new Mundo();
+        Mundo m=new Mundo(100,100);
+        Robot karel=new Robot("Karel");
+        karel.mundo=m;
+        //karel.camina();
     }
 }

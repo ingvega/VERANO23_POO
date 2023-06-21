@@ -12,6 +12,24 @@ public class Robot {
     private String nombre="Anonimo";
     private char direccion='N';
     
+    public Ubicacion posicionActual;
+    public Mundo mundo;
+    
+    public Robot(){
+        posicionActual=new Ubicacion();
+    }
+    
+    public Robot(String nombre){
+        //invocando el contructor predeterminado
+        this();
+        setNombre(nombre);
+        //No se puede invocar directamente el constructor
+        //Robot();
+        
+        //posicionActual=new Ubicacion();
+    }
+    
+    
     private String getNombre(){
         return nombre;
     }
