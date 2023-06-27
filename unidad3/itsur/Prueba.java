@@ -40,7 +40,7 @@ public class Prueba {
         Docente d=new Docente("Juan Perez","juan@gmail.com",
                 LocalDate.of(2000, 1, 1),"D2",20,20);
         
-        d.setClave("D2");
+        d.setClave("G2");
         d.setHrsXSemana(20);
         d.setSueldoXHora(10);
         

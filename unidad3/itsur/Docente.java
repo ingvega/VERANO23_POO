@@ -14,6 +14,11 @@ public class Docente extends Empleado {
     private int hrsXSemana;
     private float sueldoXHora;
 
+//    public Docente(String nombre){
+//        super(nombre);
+//        System.out.println("Construyendo un docente");
+//    }
+    
     public Docente(String nombre, String correo, LocalDate fechaNac,
             String clave, int hrsXSemana, float sueldoXHora){
         super(nombre,correo,fechaNac,clave);

@@ -15,6 +15,11 @@ public class Persona {
     private String correo;
     private LocalDate fechaNacimiento;//=LocalDate.now();
 
+    //public Persona(){}
+//    public Persona(String nombre){
+//        setNombre(nombre);
+//        System.out.println("Construyendo una persona");
+//    }
     public Persona(String nombre, String correo, LocalDate fechaNac){
         setNombre(nombre);
         setCorreo(correo);
