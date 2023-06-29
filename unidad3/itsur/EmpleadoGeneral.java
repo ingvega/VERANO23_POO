@@ -11,9 +11,26 @@ import java.time.LocalDate;
  * @author paveg
  */
 public class EmpleadoGeneral extends Empleado {
-    public EmpleadoGeneral(String nombre, String correo, LocalDate fechaNac,
-            String clave){
-        super(nombre,correo,fechaNac,clave);
-    
+
+    private float sueldoBase;
+
+    public float getSueldoBase() {
+        return sueldoBase;
     }
+
+    public void setSueldoBase(float sueldoBase) {
+        this.sueldoBase = sueldoBase;
+    }
+
+    public EmpleadoGeneral(String nombre, String correo, LocalDate fechaNac,
+            String clave, float sueldoBase) {
+        super(nombre, correo, fechaNac, clave);
+        setSueldoBase(sueldoBase);
+    }
+
+    @Override
+    public float calcularSueldo() {
+        return super.calcularSueldo() + sueldoBase;
+    }
+
 }

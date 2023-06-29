@@ -64,6 +64,12 @@ public class Docente extends Empleado {
         System.out.println(calcularSueldo());
     }
     
+    @Override
+    public String toString(){
+        return "DOCENTE\n"+ super.toString()+
+                "\nHrs por semana = " + hrsXSemana +
+                "\nSueldo por hora = " + sueldoXHora;
+    }
 //    public int calcularEdad(){
 //        return 0;
 //    }

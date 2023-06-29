@@ -69,4 +69,35 @@ public class Persona {
         return edad; 
     }
     
+    @Override
+    public boolean equals(Object obj){
+        if(obj==null) {
+            return false;
+        }
+        //Verificar que los objetos sean del mismo tipo
+        //para evitar una excepción al hacer casting
+        //El objeto a comparar y this son de tipo de dato identico
+//        if(obj.getClass()!=this.getClass()){
+//            return false;
+//        }
+        //El objeto a comparar y this son de "parecido" (son parde
+        //de la misma jerarquía de herencia)
+        if(!(obj instanceof Persona)){
+            return false;
+        }
+        
+        Persona otraPersona=(Persona) obj;
+        if(this.getNombre().equalsIgnoreCase(otraPersona.getNombre())){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    @Override
+    public String toString(){
+        return "PERSONA\nNombre=" + nombre + 
+                "\nCorreo="+correo +
+                "\nFecha Nacimiento="+fechaNacimiento;
+    }
 }

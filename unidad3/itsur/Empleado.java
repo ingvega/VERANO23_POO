@@ -56,4 +56,9 @@ public class Empleado extends Persona {
         return 700;
     }
     
+    @Override
+    public String toString(){
+        return "EMPLEADO\n" + super.toString() +
+                "\nClave="+clave;
+    }
 }

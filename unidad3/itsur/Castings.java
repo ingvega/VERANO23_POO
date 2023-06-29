@@ -21,14 +21,34 @@ public class Castings {
         String c="H"+"ola";
         System.out.println(a==b);
         System.out.println(a==c);
-        Persona p=new Persona("","",LocalDate.now());
-        Persona p1=new Docente("","",LocalDate.now(),"D1",1,1);
-        Docente d=new Docente("","",LocalDate.now(),"D1",1,1);
-        Docente d1=new Docente("","",LocalDate.now(),"D1",1,1);
-        //Conversión no válida
-        //d=(Docente) p;
-        d=(Docente) p1;
-        System.out.println(p1==d);
-        System.out.println(d1==d);
+        Persona d=new Docente("","",LocalDate.now(),"D1",1,1);
+        //Alumno a1=(Alumno) d;
+        
+        Empleado e3=(Docente)d;
+        e3=(Empleado)d;
+        //Acceder al tipo de dato original del objeto almacenado
+        System.out.println(e3.getClass().getName());
+        
+        System.out.println(e3 instanceof Persona);
+        
+        
+        Persona p=new Empleado("","",LocalDate.now(),"D1");
+        //if(p.getClass().getName().equals("unidad3.itsur.Empleado")){
+        if(p.getClass()==Empleado.class){
+            System.out.println("Es un empleado");
+        }
+        
+        
+        
+        System.out.println(p instanceof Docente);
+        
+//        Persona p1=new Docente("","",LocalDate.now(),"D1",1,1);
+//        Empleado e=new EmpleadoGeneral("","",LocalDate.now(),"D1");
+//        Empleado e1=e;
+//        Empleado e2=(Empleado)(Docente)e;
+//        e2=(Empleado)p;
+        
+//        System.out.println(p1==d);
+//        System.out.println(d1==d);
     }
 }
