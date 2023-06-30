@@ -48,6 +48,8 @@ public class Prueba {
         d.imprimirDatos();
         System.out.println(d.calcularEdad());
         
+        
+        
         ArrayList<Persona> personas=new ArrayList<Persona>();
         personas.add(new Docente("Juan Perez","juan@gmail.com",
                 LocalDate.now(),"D1",40,10));
